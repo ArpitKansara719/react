@@ -27,7 +27,8 @@ function Registration()
         if(item.length<8)
         {
             setErrs(true)
-        }else if(item=="A" || item=="Z")
+        }
+        else if("/^[a-zA-Z0-9!@#$%^&*]{6,16}$/")
         {
             setErrs(true)
         }
